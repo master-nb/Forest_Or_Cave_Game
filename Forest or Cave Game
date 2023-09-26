@@ -1,0 +1,18 @@
+Answer = input('Do you want to play this game? [Yes/No]:')
+
+if Answer == 'Yes':
+    print('Welcome to the game!')
+    Answer = input('Do you want to go a jungle or cave? [Jungle/Cave]:')
+    if Answer == "Jungle":
+        print('Oh! There is a tiger in front of you. It is so scary. It killed you.')
+    # if Answer == 'Cave':
+    else:
+        print('Oh! There is a beer sleeping in front of you.')
+        Answer = input(' The beer is so powerful. Do you want to fight with it or run away? [Fight/Run]:')
+        if Answer == 'Fight':
+            print('You are very brave. You defeated the beer.')
+        #if Answer == 'Run':
+        else:
+            print('Oh! You lose the game.')
+else:
+    print('You closed the game. This game is very interesting.Please play this at least once.')
